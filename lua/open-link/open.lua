@@ -33,7 +33,7 @@ local function browse(link)
   elseif vim.fn.has("macunix") == 1 then
     exec("open", link)
   else
-    exec("xdg-open", link)
+    exec("chromium", link)
   end
 end
 
